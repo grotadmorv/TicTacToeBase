@@ -41,14 +41,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTv-to-XZe">
-                                <rect key="frame" x="148" y="318" width="79" height="30"/>
-                                <state key="normal" title="Play Offline"/>
+                                <rect key="frame" x="123" y="311" width="129" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Play Offline">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
+                                    <action selector="buttonPlay:" destination="4lW-l8-yoq" eventType="touchUpInside" id="M6m-0N-0eX"/>
+                                    <action selector="playButton" destination="4lW-l8-yoq" eventType="touchUpInside" id="2fM-P0-kdV"/>
                                     <segue destination="FpB-PD-wiI" kind="presentation" id="ucq-D1-pNP"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.073608649669999998" green="0.35971907380000001" blue="0.046718315359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NTv-to-XZe" firstAttribute="centerX" secondItem="C7v-dC-Yku" secondAttribute="centerX" id="3Xu-Qp-Au0"/>
                             <constraint firstItem="NTv-to-XZe" firstAttribute="centerY" secondItem="C7v-dC-Yku" secondAttribute="centerY" id="leN-rq-bHw"/>
@@ -57,6 +62,7 @@
                     <navigationItem key="navigationItem" id="b5N-Lh-lEB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqa-R8-E1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4lW-l8-yoq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1924" y="-648"/>
         </scene>
@@ -79,9 +85,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOg-sT-1ve">
                                 <rect key="frame" x="66" y="199" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="qQP-wx-i3M"/>
@@ -90,8 +96,9 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlK-HZ-sj7">
                                 <rect key="frame" x="66" y="418" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="Ugf-KM-V2Q"/>
@@ -100,8 +107,9 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRI-JA-ALv">
                                 <rect key="frame" x="165" y="418" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="D5F-Ft-Hlj"/>
@@ -110,8 +118,9 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qt4-pO-Uq2">
                                 <rect key="frame" x="165" y="312" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="g8d-f1-fxd"/>
@@ -120,8 +129,9 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-9x-RhD">
                                 <rect key="frame" x="66" y="312" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="5qi-B3-Ykl"/>
@@ -130,8 +140,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ts-bX-gG3">
                                 <rect key="frame" x="265" y="199" width="74" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="zni-LM-Y7e"/>
@@ -140,8 +151,9 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrK-4V-EIb">
                                 <rect key="frame" x="164" y="199" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="z5f-Da-Xmi"/>
@@ -150,8 +162,9 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfA-jN-dIl">
                                 <rect key="frame" x="265" y="312" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="xO8-tW-2An"/>
@@ -159,28 +172,40 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-ox-B72">
                                 <rect key="frame" x="139" y="91" width="97" height="30"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.073608649669999998" green="0.35971907380000001" blue="0.046718315359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2R-NY-AuR">
                                 <rect key="frame" x="265" y="418" width="61" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="handleClick:" destination="FpB-PD-wiI" eventType="touchUpInside" id="lcw-Wc-iOJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4s-NT-d9h">
+                                <rect key="frame" x="139" y="39" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.073608649669999998" green="0.35971907380000001" blue="0.046718315359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.073608649669999998" green="0.35971907380000001" blue="0.046718315359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gEm-ox-B72" firstAttribute="top" secondItem="EId-hC-NaP" secondAttribute="bottom" constant="71" id="Brx-jU-f7Z"/>
-                            <constraint firstItem="gEm-ox-B72" firstAttribute="centerX" secondItem="6oA-h1-oaz" secondAttribute="centerX" id="Fer-eu-8zH"/>
+                            <constraint firstItem="j4s-NT-d9h" firstAttribute="centerX" secondItem="6oA-h1-oaz" secondAttribute="centerX" id="5sv-XP-396"/>
+                            <constraint firstItem="gEm-ox-B72" firstAttribute="top" secondItem="j4s-NT-d9h" secondAttribute="bottom" constant="41" id="DqZ-t5-2VE"/>
+                            <constraint firstItem="gEm-ox-B72" firstAttribute="centerX" secondItem="6oA-h1-oaz" secondAttribute="centerX" id="GOt-ks-YPH"/>
+                            <constraint firstItem="j4s-NT-d9h" firstAttribute="top" secondItem="EId-hC-NaP" secondAttribute="bottom" constant="19" id="inj-nh-LnJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="scoreTxt" destination="j4s-NT-d9h" id="At0-O1-Sey"/>
                         <outlet property="winnerText" destination="gEm-ox-B72" id="fZs-zK-UR6"/>
                     </connections>
                 </viewController>
@@ -275,6 +300,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqs-km-NOR">
                                 <rect key="frame" x="41" y="181" width="71" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="lfM-R3-NCK"/>
                                 </connections>
@@ -282,6 +308,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-AI-thU">
                                 <rect key="frame" x="153" y="181" width="75" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="Swe-o1-uDk"/>
                                 </connections>
@@ -289,6 +316,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82M-pP-fk7">
                                 <rect key="frame" x="258" y="184" width="75" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="QHP-dq-q2v"/>
                                 </connections>
@@ -296,6 +324,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y00-At-dPB">
                                 <rect key="frame" x="44" y="302" width="64" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="lWy-bh-w7o"/>
                                 </connections>
@@ -303,6 +332,7 @@
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGM-WI-Kk4">
                                 <rect key="frame" x="158" y="302" width="64" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="NyL-8M-ORa"/>
                                 </connections>
@@ -310,6 +340,7 @@
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-gC-STw">
                                 <rect key="frame" x="261" y="298" width="68" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="fgB-ju-B1X"/>
                                 </connections>
@@ -317,6 +348,7 @@
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQd-Wb-ehe">
                                 <rect key="frame" x="44" y="430" width="68" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="zRx-7K-0Eg"/>
                                 </connections>
@@ -324,6 +356,7 @@
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-R4-idN">
                                 <rect key="frame" x="158" y="425" width="64" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="4T3-iS-Ayh"/>
                                 </connections>
@@ -331,6 +364,7 @@
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-2X-y30">
                                 <rect key="frame" x="261" y="425" width="63" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="handleClick:" destination="PRa-JZ-nF2" eventType="touchUpInside" id="SOU-cz-s9A"/>
                                 </connections>

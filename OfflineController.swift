@@ -11,7 +11,10 @@ import UIKit
 class OfflineController: UIViewController {
     var values: Array = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     var playerTurn: Int = 1
+    var scoreX: Int = 0
+    var scoreO: Int = 0
     
+    @IBOutlet weak var scoreTxt: UITextField!
     @IBOutlet weak var winnerText: UITextField!
     
     override func viewDidLoad() {
@@ -23,7 +26,9 @@ class OfflineController: UIViewController {
     }
     
     @IBAction func handleClick(_ sender: UIButton) {
-        
+        self.winnerText.font = UIFont(name: "MarkerFelt-Wide", size: 30)
+        self.scoreTxt.font = UIFont(name: "MarkerFelt-Wide", size: 30)
+        self.scoreTxt.text = "X : \(self.scoreX) - O : \(self.scoreO)"
         if(self.playerTurn == 1){
             sender.setImage(UIImage(named: "O.png"), for: .normal)
         }else if(self.playerTurn == 2){
@@ -43,10 +48,14 @@ class OfflineController: UIViewController {
             (self.values[2] != 0 && self.values[2] == self.values[4] && self.values[4] == self.values[6])
         ) {
             if(self.playerTurn == 1){
-                winnerText.text = "Player \(self.playerTurn) won the game (round)"
+                self.scoreO += 1
+                winnerText.text = "Player \(self.playerTurn) won the game"
             }else{
-                winnerText.text = "Player \(self.playerTurn) won the game(cross)"
+                self.scoreX += 1
+                winnerText.text = "Player \(self.playerTurn) won the game"
             }
+            
+            scoreTxt.text = "X : \(self.scoreX) - O : \(self.scoreO)"
             let alert = UIAlertController(title: "C'est fini !", message: "Que voulez-vous faire maintenant ? ", preferredStyle: .actionSheet)
             
             alert.addAction(UIAlertAction(title: "Retour à la page d'accueil", style: .default, handler: { (_) in
